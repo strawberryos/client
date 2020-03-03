@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme: Theme) =>
           </IconButton>
           <img src={logo} className="icon" alt="logo" />
           <Typography variant="h6" className={classes.title}>
-            RaspOS
+            StrawberryOS
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
