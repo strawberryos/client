@@ -10,6 +10,7 @@ import {
   useParams
 } from "react-router-dom";
 import MainHeader from "./MainHeader";
+import Login from "./pages/sign/Login";
 
 const theme = createMuiTheme({
   palette: {
@@ -25,17 +26,18 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <Router>
-      <div>
         <Switch>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
           <Route path="/topics" component={Topics} />
           <Route path="/">
             <Home />
           </Route>
         </Switch>
-      </div>
     </Router>
     </ThemeProvider>
   );
